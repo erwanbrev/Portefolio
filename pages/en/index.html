@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet" />
+    <title>Erwan Brévault</title>
+</head>
+
+<body>
+    <!-- !header production -->
+    <header>
+        <section class="section-flex1">
+            <nav class="flex-nav nav-1">
+                <p>
+                    <a href="./index.html">
+                        <span class="colorBlue">E</span><span class="colorPink">B</span>
+                    </a>
+                </p>
+                <!-- ?create 3 buttons -->
+                <ul>
+                    <li>
+                        <a href="./pages/bio.html" class="colorWhite">About<i class="em em-rocket"></i></a>
+                    </li>
+                    <li>
+                        <a href="./pages/projects.html" class="colorBlue">Projects<i class="em em-dart"></i></a>
+                    </li>
+                    <li>
+                        <a href="./pages/links.html" class="colorPink">Links<i class="em em-zap"></i></a>
+                    </li>
+                </ul>
+                <!-- ?create button burger -->
+                <div class="btn-burger">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+            </nav>
+            <div class="mobile-nav">
+                <ul class="mobile-ul">
+                    <li>
+                        <a href="./pages/bio.html">About</a>
+                    </li>
+                    <li>
+                        <a href="./pages/projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="./pages/links.html">Links</a>
+                    </li>
+                    <!-- *link to french version -->
+                    <li>
+                        <a href="./pages/fr/index.html">French version of the site</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <!--? def title -->
+    <h1>
+        <span class="colorBlue">Erwan Brévault</span> is a
+        <span class="colorPink">Front-End</span> Development student, passionate about this one and the IT world.
+    </h1>
+
+    <!--! main first -->
+    <main>
+        <section class="container">
+            <section class="followers">
+                <div class="case">
+                    <p>GitHub</p>
+                    <span>23</span>
+                </div>
+                <div class="case">
+                    <p>LinkedIn</p>
+
+                    <span>81</span>
+                </div>
+                <div class="case">
+                    <p>Twitter</p>
+                    <span>5</span>
+                </div>
+                <div class="case">
+                    <p>Instagram</p>
+                    <span>141</span>
+                </div>
+            </section>
+            <!-- *importation of a profile picture -->
+            <section class="img">
+                <img class="sizepic" src="./pictures/profile-pic.jpg" alt="profile-picture" />
+            </section>
+        </section>
+    </main>
+    <!-- *sentence below main -->
+    <section>
+        <h2 class="firstSentence" id="sentence">
+            You can <span class="colorPink">contact me</span> through my networks
+            <span class="colorBlue">below </span> <br> Otherwise you can <span class="colorPink">click</span> on the
+            <span class="colorBlue">top</span> of the page
+            for more infos !
+        </h2>
+        <h2 id="sentence" class="secondSentence">
+            You can <span class="colorPink">contact me</span> through my networks
+            <span class="colorBlue">below </span> <br> Otherwise you can <span class="colorPink">click</span> on the
+            button burger
+            on the <span class="colorBlue">top</span> of the page
+            for more infos !
+        </h2>
+    </section>
+    <!-- !formspree contact form -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+        window.formbutton = window.formbutton || function () {
+            (formbutton.q = formbutton.q || []).push(arguments)
+        };
+        /* customize formbutton below*/
+        formbutton("create", {
+            action: "https://formspree.io/f/xgedewzz",
+            title: "How can we help?",
+            fields: [{
+                type: "email",
+                label: "Email:",
+                name: "email",
+                required: true,
+                placeholder: "your@email.com"
+            }, {
+                type: "textarea",
+                label: "Message:",
+                name: "message",
+                placeholder: "What's on your mind?",
+            }, {
+                type: "submit"
+            }],
+            styles: {
+                title: {
+                    backgroundColor: "violet"
+                },
+                button: {
+                    backgroundColor: "violet"
+                }
+            }
+        });
+    </script>
+    <!-- !website's footer -->
+    <footer>
+        <section class="section-flex2">
+            <nav class="wrapperFooter">
+                <!-- *import social-logos -->
+                <div class="wrapTop">
+                    <div id="pics">
+                        <a href="https://github.com/erwanbrev" target="_blank">
+                            <img src="/pictures/svg/icons8-github-4!.png" alt="github-logo" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/erwanbrev/" target="_blank">
+                            <img src="/pictures/svg/icons8-linkedin.svg" alt="linkedin-logo" />
+                        </a>
+                        <a href="https://twitter.com/dev_bzh" target="_blank">
+                            <img src="/pictures/svg/icons8-twitter.svg" alt="twitter-logo" />
+                        </a>
+                        <a href="https://www.instagram.com/erwanbvt/" target="_blank"><img
+                                src="/pictures/svg/icons8-instagram.svg" alt="instagram-logo" />
+                        </a>
+                    </div>
+                </div>
+                <!-- *import mobile social-logos  -->
+                <div id="picsMobile" class="wrapTop">
+                    <a href="https://github.com/erwanbrev">
+                        <img src="/pictures/svg/mobile/icons8-github-24-modified.png" alt="github-logo" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/erwanbrev">
+                        <img src="/pictures/svg/mobile/icons8-linkedin.svg" alt="linkedin-logo" />
+                    </a>
+                    <a href="https://twitter.com/dev_bzh">
+                        <img src="/pictures/svg/mobile/icons8-twitter.svg" alt="twitter-logo" />
+                    </a>
+                    <a href="https://www.instagram.com/erwanbvt">
+                        <img src="/pictures/svg/mobile/icons8-instagram.svg" alt="instagram-logo" />
+                    </a>
+                </div>
+                <!-- !option to send mail after clicked -->
+                <div id="mail" class="wrapBot">
+                    <a href="mailto:devbzh35@gmail.com">devbzh35@gmail.com</a>
+                </div>
+                <!-- *link to french version -->
+                <div class="wrapSiteFR">
+                    <a href="./pages/fr/index.html">French version of the site</a>
+                </div>
+                <div class="wrapSign">
+                    <p>©ErwanBrévault</p>
+                </div>
+            </nav>
+        </section>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>

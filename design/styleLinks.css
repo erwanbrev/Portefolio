@@ -1,0 +1,471 @@
+/* police titre EB */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik:wght@300;400;700&display=swap");
+
+:root {
+  --white: #ffffff;
+  --pinkmo: #f5578e;
+  --bluemo: #56ddd9;
+  --grey: #bac0c0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* bouton burger mobile */
+.btn-burger div {
+  height: 3px;
+  width: 30px;
+  background-color: var(--pinkmo);
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.btn-burger {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.section-flex {
+  margin-bottom: 100px;
+}
+
+/* barre de navigation */
+.flex-nav {
+  height: 100px;
+}
+
+.nav-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* DEFINITION DE LA TAILLE DU LOGO */
+.nav-1 p {
+  margin-left: 50px;
+}
+
+/* definition du header */
+header {
+  height: 7vh;
+}
+
+nav span {
+  font-size: 1.8rem;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/* apparence des trois options */
+.nav-1 ul {
+  list-style: none;
+  display: flex;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.nav-1 ul li {
+  font-size: 1.8rem;
+  margin: 0 10px;
+}
+
+.nav-1 i {
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.colorWhite {
+  color: var(--white);
+}
+
+.colorBlue {
+  color: var(--bluemo);
+}
+
+.colorPink {
+  color: var(--pinkmo);
+}
+
+.colorGrey {
+  color: var(--grey);
+}
+
+/* apparence des options */
+ul a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+body {
+  font-family: "Rubik", "Arial";
+  font-style: normal;
+  background-color: #010101;
+  background-size: cover;
+  color: var(--white);
+}
+
+.sentence {
+  text-align: center;
+  font-family: "Fredoka One", "Arial";
+  font-size: 1.2rem;
+  margin-top: 2%;
+}
+
+.sentence a {
+  text-decoration: none;
+}
+
+/* DISPLAY ARRAY CENTER  */
+.containerV2 {
+  display: grid;
+  width: 920px;
+  margin: 2% auto;
+  background: #171717;
+  border-radius: 5px;
+}
+
+.gridMain {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr);
+  align-items: center;
+  margin: 5% 5%;
+}
+
+.gridMain a {
+  font-size: 150%;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.gridFirst {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.gridSecond {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.gridThree {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.gridFour {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.gridFive {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.gridSix {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* !website's footer */
+
+.section-flex2 {
+  display: grid;
+  align-content: center;
+}
+
+footer {
+  margin-top: 2%;
+  display: grid;
+  background-color: #171717;
+  height: 14vh;
+}
+
+.wrapperFooter {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.wrapTop {
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+
+.wrapBot {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.wrapSiteFR {
+  grid-column: 3;
+  grid-row: 1;
+  margin-bottom: 4%;
+}
+
+.wrapSiteFR a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--bluemo);
+  font-size: 1.2rem;
+}
+
+.wrapSign {
+  grid-column: 3;
+  grid-row: 2;
+  color: var(--grey);
+  font-size: 1.5rem;
+}
+
+#pics {
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+}
+
+#picsMobile {
+  display: none;
+}
+
+#mail {
+  margin-top: 5px;
+  font-size: 1.8rem;
+}
+
+#mail a {
+  text-decoration: none;
+  color: var(--grey);
+}
+
+
+/*  */
+/*  */
+/*  */
+/*? mobile size */
+@media screen and (max-width: 600px) {
+  header {
+    height: 14vh;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  .nav-1 p {
+    margin-left: 10px;
+  }
+
+  /* button burger */
+  .mobile-nav {
+    display: inline-block;
+    background: linear-gradient(#f5578e, #56ddd9);
+    border-radius: 5px;
+    width: 90%;
+    top: 10%;
+    right: 0;
+    /* position and overflow are important to hide the menu burger */
+    position: fixed;
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+
+  .mobile-ul {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 40vh;
+  }
+
+  .mobile-ul a {
+    color: var(--white);
+  }
+
+  .btn-burger {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .mobile-nav-active {
+    transform: translateX(-5%);
+  }
+
+  .sentence {
+    font-size: 1rem;
+  }
+
+  .sentence a {
+    text-decoration: none;
+  }
+
+  /* DISPLAY ARRAY CENTER  */
+  .containerV2 {
+    width: 300px;
+    margin: 11% auto;
+    text-align: center;
+  }
+
+  .gridMain a {
+    font-size: 90%;
+  }
+
+  /* !footer */
+  #pics {
+    display: none;
+  }
+
+  footer {
+    margin-top: 6%;
+    display: grid;
+    background-color: #171717;
+    height: 14vh;
+  }
+
+  .wrapperFooter {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .wrapTop {
+    margin-top: 2%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .wrapBot {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 8%;
+  }
+
+  .wrapSiteFR {
+    display: none;
+  }
+
+  .wrapSign {
+    grid-column: 1;
+    grid-row: 3;
+    color: var(--bluemo);
+    margin-bottom: 2%;
+    font-size: .8rem;
+  }
+
+  nav #pics {
+    display: none;
+  }
+
+  nav #picsMobile {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+  }
+
+  nav #mail {
+    display: flex;
+    margin-top: 5px;
+    font-size: 1rem;
+    justify-content: center;
+    width: 150px;
+    margin-right: 30px;
+  }
+
+  #mail a {
+    text-decoration: none;
+    color: var(--grey);
+  }
+
+  /* La classe toggle est créée directement en JS */
+  .toggle .line-1 {
+    transform: rotate(45deg) translateX(11px);
+  }
+
+  .toggle .line-2 {
+    opacity: 0;
+  }
+
+  .toggle .line-3 {
+    transform: rotate(-45deg) translateX(11px);
+  }
+
+  .mobile-img {
+    display: block;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* ?navbar */
+
+  .flex-nav {
+    height: 100px;
+    margin-top: 1%;
+  }
+
+  /* ?definition du header */
+
+  header {
+    height: 120px;
+  }
+
+  nav span {
+    font-size: 2.5rem;
+    margin: 0 10px;
+  }
+
+  /* ?look of three options */
+
+  .nav-1 ul li {
+    font-size: 2.3rem;
+    margin: 0 10px;
+  }
+
+  .sentence {
+    margin-top: 2%;
+    font-size: 170%;
+  }
+
+  .sentence a {
+    text-decoration: none;
+  }
+
+  /* DISPLAY ARRAY CENTER  */
+  .containerV2 {
+    width: 1200px;
+    margin: 4% auto;
+  }
+
+  .gridMain {
+    font-size: 200%;
+    margin: 4% 4%;
+    text-align: center;
+    row-gap: 20px;
+  }
+
+  .gridMain a {
+    font-size: 90%;
+  }
+}

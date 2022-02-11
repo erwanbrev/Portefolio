@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/design/styleProj.css" />
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet" />
+  <title>Erwan Brévault</title>
+</head>
+
+<body>
+  <!-- header production -->
+  <header>
+    <section class="section-flex">
+      <nav class="flex-nav nav-1">
+        <p>
+          <a href="/index.html">
+            <span class="colorBlue">E</span><span class="colorPink">B</span>
+          </a>
+        </p>
+        <!-- create 3 buttons desktop -->
+        <ul>
+          <li>
+            <a href="./bio.html" class="colorWhite">About
+              <i class="em em-rocket"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./projects.html" class="colorBlue">Projects
+              <i class="em em-dart"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./links.html" class="colorPink">Links
+              <i class="em em-zap"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- create button burger -->
+        <div class="btn-burger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+      </nav>
+      <div class="mobile-nav">
+        <ul class="mobile-ul">
+          <li><a href="./bio.html">About</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./links.html">Links</a></li>
+          
+        </ul>
+      </div>
+    </section>
+  </header>
+  <!-- section containing project images -->
+    <section id="proj">
+      <h2>Find here the projects I worked on !</h2>
+      <div class="proj-container">
+        <!-- image setting 1 -->
+        <div class="proj-2"><a href="https://github.com/erwanbrev/Portfolio-v1" target="_blank">
+          <div class="proj-img"></div></a>
+          <p>
+            "<a href="https://github.com/erwanbrev/Portfolio-v1" target="_blank"><span class="underPink">Portfolio</span></a>" is, as the name suggests, my personal portfolio where you can find more information about me.
+          </p>
+        </div>
+        <!-- image setting 2 -->
+        <div class="proj-1">
+          <a href="https://github.com/erwanbrev/webProjects/tree/main/SurfVan" target="_blank">
+            <div class="proj-img"></div></a>
+            <p>
+              "<a href="https://github.com/erwanbrev/webProjects/tree/main/SurfVan" target="_blank"><span class="underBlue">Surf Van</a></span>" is a project that consists of reproducing a given site with some liberties.
+            </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- formspree contact form -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+      window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+      /* customize formbutton below*/
+      formbutton("create", {
+        action: "https://formspree.io/f/xgedewzz",
+        title: "How can we help?",
+        fields: [
+          {
+            type: "email",
+            label: "Email:",
+            name: "email",
+            required: true,
+            placeholder: "your@email.com"
+          },
+          {
+            type: "textarea",
+            label: "Message:",
+            name: "message",
+            placeholder: "What's on your mind?",
+          },
+          { type: "submit" }
+        ],
+        styles: {
+          title: {
+            backgroundColor: "violet"
+          },
+          button: {
+            backgroundColor: "violet"
+          }
+        }
+      });
+    </script>
+  </main>
+  <!-- website's footer -->
+  <footer>
+    <section class="section-flex">
+      <nav class="flex-nav2 nav-1">
+        <!-- import social-logos -->
+        <div id="pics">
+          <a href="https://github.com/erwanbrev" target="_blank">
+            <img src="/pictures/svg/icons8-github-4!.png" alt="github-logo" />
+          </a>
+          <a href="https://www.linkedin.com/in/erwanbrev/" target="_blank">
+            <img src="/pictures/svg/icons8-linkedin.svg" alt="linkedin-logo" />
+          </a>
+          <a href="https://twitter.com/dev_bzh" target="_blank">
+            <img src="/pictures/svg/icons8-twitter.svg" alt="twitter-logo" />
+          </a>
+          <a href="https://www.instagram.com/erwanbvt/" target="_blank">
+            <img src="/pictures/svg/icons8-instagram.svg" alt="instagram-logo" />
+          </a>
+        </div>
+        <!-- import mobile social-logos  -->
+        <a>
+          <div id="picsMobile">
+            <a href="https://github.com/erwanbrev">
+              <img src="/pictures/svg/mobile/icons8-github-24-modified.png" alt="github-logo" />
+            </a>
+            <a href="https://www.linkedin.com/in/erwanbrev">
+            <img src="/pictures/svg/mobile/icons8-linkedin.svg" alt="linkedin-logo" />
+          </a>
+          <a href="https://twitter.com/dev_bzh">
+            <img src="/pictures/svg/mobile/icons8-twitter.svg" alt="twitter-logo" />
+          </a>
+          <a href="https://www.instagram.com/erwanbvt">
+            <img src="/pictures/svg/mobile/icons8-instagram.svg" alt="instagram-logo" />
+          </a>
+          </div>
+          <!-- option to send mail after clicked -->
+          <div id="mail">
+            <a href="mailto:devbzh35@gmail.com">devbzh35@gmail.com</a>
+          </div>
+      </nav>
+    </section>
+  </footer>
+  <!-- link with JS file -->
+  <script src="/index.js"></script>
+</body>
+
+</html>
