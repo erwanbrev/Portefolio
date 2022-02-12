@@ -132,7 +132,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
   justify-items: center;
-  margin: 4% 5%;
+  margin: 1% 5%;
 }
 
 .gridFirst {
@@ -160,7 +160,9 @@ a.dwnld-btn {
   background: linear-gradient(var(--pinkmo), var(--bluemo));
   color: white;
   border-radius: 25px;
-  margin-left: 38%;
+  margin: 3% 8.2%;
+  position: absolute;
+  z-index: 3;
 }
 
 a.dwnld-btn:hover {
@@ -169,6 +171,8 @@ a.dwnld-btn:hover {
 
 .img {
   display: block;
+  position: relative;
+  z-index: 1;
 }
 
 .sizepic {
@@ -184,7 +188,7 @@ a.dwnld-btn:hover {
 }
 
 footer {
-  margin-top: 4%;
+  margin-top: 3%;
   display: grid;
   background-color: #171717;
   height: 14vh;
@@ -194,7 +198,7 @@ footer {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   justify-items: center;
   align-items: center;
 }
@@ -212,13 +216,13 @@ footer {
 .wrapSiteFR {
   grid-column: 3;
   grid-row: 1;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
 }
 
 .wrapSiteFR a {
   list-style: none;
   text-decoration: none;
-  color: var(--bluemo);
+  color: var(--white);
   font-size: 1.2rem;
 }
 
@@ -249,6 +253,19 @@ footer {
   color: var(--grey);
 }
 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* ?footer resize full window */
+@media screen and (max-height: 870px) {
+  footer {
+    margin-top: 8%;
+  }
+}
 
 /*  */
 /*  */
@@ -330,7 +347,8 @@ footer {
   }
 
   a.dwnld-btn {
-    margin-left: 30%;
+    margin-left: -5px;
+    margin: 3% 8.2%;
   }
 
   .gridMain {
@@ -359,6 +377,7 @@ footer {
     padding: 2%;
     font-size: 90%;
     width: 100%;
+    line-height: 150%;
   }
 
   .img {
@@ -375,7 +394,7 @@ footer {
   }
 
   footer {
-    margin-top: 6%;
+    margin-top: 24%;
     display: grid;
     background-color: #171717;
     height: 14vh;
@@ -498,7 +517,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     justify-items: center;
-    margin: 3% 5%;
+    margin: 2% 5%;
   }
 
   .gridFirst {
@@ -518,6 +537,12 @@ footer {
     padding: 2%;
     font-size: 140%;
     width: 100%;
+    line-height: 140%;
+  }
+
+  a.dwnld-btn {
+    padding: 20px;
+    margin: 3% 8.3%;
   }
 
   .img {

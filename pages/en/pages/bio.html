@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/design/styleBio.css" />
+  <link rel="stylesheet" href="/pages/en/design/styleBio.css" />
   <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet" />
   <title>About Erwan</title>
 </head>
@@ -16,20 +16,20 @@
     <section class="section-flex">
       <nav class="flex-nav nav-1">
         <p>
-          <a href="/index.html">
+          <a href="/pages/en/index.html">
             <span class="colorBlue">E</span><span class="colorPink">B</span>
           </a>
         </p>
         <!--* create 3 buttons -->
         <ul>
           <li>
-            <a href="./bio.html" class="colorWhite">About<i class="em em-rocket"></i></a>
+            <a href="/pages/en/pages/bio.html" class="colorWhite">About<i class="em em-rocket"></i></a>
           </li>
           <li>
-            <a href="./projects.html" class="colorBlue">Projects<i class="em em-dart"></i></a>
+            <a href="/pages/en/pages/projects.html" class="colorBlue">Projects<i class="em em-dart"></i></a>
           </li>
           <li>
-            <a href="./links.html" class="colorPink">Links<i class="em em-zap"></i></a>
+            <a href="/pages/en/pages/links.html" class="colorPink">Links<i class="em em-zap"></i></a>
           </li>
         </ul>
         <!-- *create button burger -->
@@ -42,16 +42,16 @@
       <div class="mobile-nav">
         <ul class="mobile-ul">
           <li>
-            <a href="./bio.html">About</a>
+            <a href="/pages/en/pages/bio.html">About</a>
           </li>
           <li>
-            <a href="./projects.html">Projects</a>
+            <a href="/pages/en/pages/projects.html">Projects</a>
           </li>
           <li>
-            <a href="./links.html">Links</a>
+            <a href="/pages/en/pages/links.html">Links</a>
           </li>
           <li>
-            <a href="./fr/pages/bio.html">French version of the site</a>
+            <a href="https://erwanbrevault.netlify.app/pages/bio.html">Version <i class="em em-fr"></i> du site</a>
           </li>
         </ul>
       </div>
@@ -65,32 +65,33 @@
         Development.<br><br>
         <i class="em em-dart"></i> Being a developer comes from my desire to create websites for SMEs.
         <br><br>
-        <i class="em em-art"></i> I'm currently improving my skills of <span class="colorBlue">C</span> , <span
-          class="colorBlue">C++</span>, <span class="colorYell">Python</span>, <span class="colorOrange">HTML5</span>,
-        <span class="colorBlueB">CSS3</span>.
-        <br><br>In my free time, I continue to learn and keep up to date with the new computer content released.
+        <i class="em em-art"></i> I'm currently improving my skills of : <br><span class="colorOrange">HTML5</span>,
+        <span class="colorBlueB">CSS3</span> and <span class="colorYell">Javascript</span>.
+        <br><br><i class="em em-chart_with_upwards_trend"></i> In my free time, I continue to learn and keep up to date
+        with the new computer content released.
         <br><br><i class="em em-male-student"></i> I’m a graduate of two French courses, the BAC Professional Electronic
         and Digital Systems option Embedded Industrial Electronics and the BTS Digital Systems option Computing and
         Networks. <br><br> I had the opportunity to do different internships in the field of electronics and computer
         science.
-        <br><br><br><a href="/ErwanBrevCV.pdf" download class="dwnld-btn">CV download</a>
       </h2>
     </section>
     <section class="gridSecond">
       <div class="img">
         <img class="sizepic" src="/pictures/profile-pic.jpg" alt="profile-picture" />
       </div>
+      <a href="/ErwanBrevCV.pdf" download class="dwnld-btn">CV download</a>
     </section>
     <!--! formspree contact form -->
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <script>
-      window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+      window.formbutton = window.formbutton || function () {
+        (formbutton.q = formbutton.q || []).push(arguments)
+      };
       /* customize formbutton below*/
       formbutton("create", {
         action: "https://formspree.io/f/xgedewzz",
         title: "How can we help?",
-        fields: [
-          {
+        fields: [{
             type: "email",
             label: "Email:",
             name: "email",
@@ -103,7 +104,9 @@
             name: "message",
             placeholder: "What's on your mind?",
           },
-          { type: "submit" }
+          {
+            type: "submit"
+          }
         ],
         styles: {
           title: {
@@ -158,7 +161,7 @@
         </div>
         <!-- *link to french version -->
         <div class="wrapSiteFR">
-          <a href="./fr/pages/bio.html">French version of the site</a>
+          <a href="/pages/bio.html">Version <i class="em em-fr"></i> du site</a>
         </div>
         <div class="wrapSign">
           <p>©ErwanBrévault</p>
@@ -166,7 +169,7 @@
       </nav>
     </section>
   </footer>
-  <script src="/index.js"></script>
+  <script src="/pages/en/index.js"></script>
 </body>
 
 </html>
