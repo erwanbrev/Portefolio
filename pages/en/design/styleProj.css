@@ -33,30 +33,26 @@
   display: none;
 }
 
+/*!header building */
+
+header {
+  height: 80px;
+}
+
 .section-flex {
-  margin-bottom: 50px;
+  height: 100%;
+  margin-top: 1%;
 }
 
-/* barre de navigation */
-.flex-nav {
-  height: 100px;
-}
-
-.nav-1 {
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* DEFINITION DE LA TAILLE DU LOGO */
-.nav-1 p {
+/**sizing of logo */
+nav p {
   margin-left: 50px;
-}
-
-/* definition du header */
-header {
-  height: 50px;
-  margin-bottom: 100px;
 }
 
 nav span {
@@ -68,20 +64,20 @@ nav a {
   text-decoration: none;
 }
 
-/* apparence des trois options */
-.nav-1 ul {
+/**button display*/
+nav ul {
   list-style: none;
   display: flex;
   margin-right: 50px;
   margin-left: 50px;
 }
 
-.nav-1 ul li {
+nav ul li {
   font-size: 1.8rem;
   margin: 0 10px;
 }
 
-.nav-1 i {
+nav i {
   font-size: 20px;
   margin: 0 5px;
 }
@@ -162,22 +158,67 @@ body {
   border: 1px solid var(--white);
 }
 
-footer {
+/* !website's footer */
+
+.section-flex2 {
   display: grid;
-  background-color: #171717;
-  height: 10vh;
+  align-content: center;
 }
 
-.flex-nav2 {
-  max-width: 100%;
-  margin-top: 25px;
+footer {
+  margin-top: 3%;
+  display: grid;
+  background-color: #171717;
+  height: 14vh;
+}
+
+.wrapperFooter {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.wrapTop {
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+
+.wrapBot {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.wrapSiteEN {
+  grid-column: 3;
+  grid-row: 1;
+  margin-bottom: 2%;
+}
+
+.wrapSiteEN a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.wrapSign {
+  grid-column: 3;
+  grid-row: 2;
+  color: var(--grey);
+  font-size: 1.5rem;
+}
+
+.wrapSign p {
+  margin-left: 0;
 }
 
 #pics {
   display: flex;
   width: 400px;
-  margin-left: 250px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #picsMobile {
@@ -185,12 +226,8 @@ footer {
 }
 
 #mail {
-  display: flex;
   margin-top: 5px;
   font-size: 1.8rem;
-  justify-content: center;
-  width: 300px;
-  margin-right: 250px;
 }
 
 #mail a {
@@ -235,9 +272,7 @@ footer {
     background: linear-gradient(#f5578e, #56ddd9);
     border-radius: 5px;
     width: 90%;
-    /* position and overflow are important to hide the menu burger */
-    position: fixed;
-    overflow: hidden;
+    position: absolute;
     top: 10%;
     right: 0;
     transform: translateX(100%);

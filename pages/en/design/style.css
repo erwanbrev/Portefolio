@@ -33,29 +33,26 @@
   display: none;
 }
 
+/*!header building */
+
+header {
+  height: 80px;
+}
+
 .section-flex {
-  margin-bottom: 100px;
+  height: 100%;
+  margin-top: 1%;
 }
 
-/* barre de navigation */
-.flex-nav {
-  height: 100px;
-}
-
-.nav-1 {
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 /**sizing of logo */
-.nav-1 p {
+nav p {
   margin-left: 50px;
-}
-
-/*!header building */
-header {
-  height: 100px;
 }
 
 nav span {
@@ -68,19 +65,19 @@ nav a {
 }
 
 /**button display*/
-.nav-1 ul {
+nav ul {
   list-style: none;
   display: flex;
   margin-right: 50px;
   margin-left: 50px;
 }
 
-.nav-1 ul li {
+nav ul li {
   font-size: 1.8rem;
   margin: 0 10px;
 }
 
-.nav-1 i {
+nav i {
   font-size: 20px;
   margin: 0 5px;
 }
@@ -119,12 +116,35 @@ ul a {
   color: var(--white);
 }
 
+
 body {
   font-family: "Rubik", "Arial";
   font-style: normal;
   background-color: #010101;
   background-size: cover;
   color: var(--white);
+}
+
+h1 {
+  display: flex;
+  font-family: "Fredoka One", "Arial";
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+h1 span {
+  margin: 0 .5%;
+}
+
+.hr {
+  margin: 1% auto;
+  background-color: var(--pinkmo);
+  height: 1px;
+  width: 80%;
+  border: none;
 }
 
 .gridMain {
@@ -160,7 +180,7 @@ a.dwnld-btn {
   background: linear-gradient(var(--pinkmo), var(--bluemo));
   color: white;
   border-radius: 25px;
-  margin: 3% 8.2%;
+  margin: 2% 6%;
   position: absolute;
   z-index: 3;
 }
@@ -198,7 +218,7 @@ footer {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
 }
@@ -213,13 +233,13 @@ footer {
   grid-row: 1 / 3;
 }
 
-.wrapSiteFR {
+.wrapSiteEN {
   grid-column: 3;
   grid-row: 1;
   margin-bottom: 2%;
 }
 
-.wrapSiteFR a {
+.wrapSiteEN a {
   list-style: none;
   text-decoration: none;
   color: var(--white);
@@ -231,6 +251,10 @@ footer {
   grid-row: 2;
   color: var(--grey);
   font-size: 1.5rem;
+}
+
+.wrapSign p {
+  margin-left: 0;
 }
 
 #pics {
@@ -263,7 +287,7 @@ footer {
 /* ?footer resize full window */
 @media screen and (max-height: 870px) {
   footer {
-    margin-top: 8%;
+    margin-top: 5%;
   }
 }
 
@@ -286,10 +310,6 @@ footer {
     margin-bottom: 10px;
   }
 
-  .flex-nav {
-    height: 60px;
-  }
-
   nav span {
     font-size: 1.8rem;
     margin: 0 10px;
@@ -303,7 +323,7 @@ footer {
     display: none;
   }
 
-  .nav-1 p {
+  nav p {
     margin-left: 10px;
   }
 
@@ -321,7 +341,6 @@ footer {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
-
 
   .mobile-ul {
 
@@ -348,7 +367,23 @@ footer {
 
   a.dwnld-btn {
     margin-left: -5px;
-    margin: 3% 8.2%;
+  }
+
+  h1 {
+    display: flex;
+    font-family: "Fredoka One", "Arial";
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    font-size: 160%;
+    margin-left: 12%;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .hr {
+    height: 3px;
+    margin: 2% auto;
   }
 
   .gridMain {
@@ -377,7 +412,7 @@ footer {
     padding: 2%;
     font-size: 90%;
     width: 100%;
-    line-height: 150%;
+    line-height: 140%;
   }
 
   .img {
@@ -420,7 +455,7 @@ footer {
     margin-left: 8%;
   }
 
-  .wrapSiteFR {
+  .wrapSiteEN {
     display: none;
   }
 
@@ -497,7 +532,7 @@ footer {
   /* ?definition du header */
 
   header {
-    height: 120px;
+    height: 80px;
   }
 
   nav span {
@@ -507,7 +542,7 @@ footer {
 
   /* ?look of three options */
 
-  .nav-1 ul li {
+  nav ul li {
     font-size: 2.3rem;
     margin: 0 10px;
   }
@@ -541,8 +576,8 @@ footer {
   }
 
   a.dwnld-btn {
-    padding: 20px;
-    margin: 3% 8.3%;
+    padding: 15px;
+    margin: 3% 6.5%;
   }
 
   .img {
@@ -550,6 +585,7 @@ footer {
   }
 
   .sizepic {
+    margin-top: 3%;
     width: 450px;
   }
 

@@ -2,194 +2,175 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet" />
-    <title>Erwan Brévault</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/design/style.css" />
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet" />
+  <title>À propos d'Erwan</title>
 </head>
 
 <body>
-    <!-- !construction du header -->
-    <header>
-        <section class="section-flex1">
-            <nav class="flex-nav nav-1">
-                <p>
-                    <a href="./index.html">
-                        <span class="colorBlue">E</span><span class="colorPink">B</span>
-                    </a>
-                </p>
-                <!-- ?create 3 buttons -->
-                <ul>
-                    <li>
-                        <a href="./pages/bio.html" class="colorWhite">À propos<i class="em em-rocket"></i></a>
-                    </li>
-                    <li>
-                        <a href="./pages/projects.html" class="colorBlue">Projets<i class="em em-dart"></i></a>
-                    </li>
-                    <li>
-                        <a href="./pages/links.html" class="colorPink">Liens<i class="em em-zap"></i></a>
-                    </li>
-                </ul>
-                <!-- ?create button burger -->
-                <div class="btn-burger">
-                    <div class="line-1"></div>
-                    <div class="line-2"></div>
-                    <div class="line-3"></div>
-                </div>
-            </nav>
-            <div class="mobile-nav">
-                <ul class="mobile-ul">
-                    <li>
-                        <a href="./pages/bio.html">À propos</a>
-                    </li>
-                    <li>
-                        <a href="./pages/projects.html">Projets</a>
-                    </li>
-                    <li>
-                        <a href="./pages/links.html">Liens</a>
-                    </li>
-                    <!-- *link to french version -->
-                    <li>
-                        <a href="https://erwanbrevault.netlify.app/">Version Anglaise du site</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </header>
-    <!--? def title -->
-    <h1>
-        <span class="colorBlue">Erwan Brévault</span> est un étudiant en développement
-        <span class="colorPink">Front-End</span>passionné par celui-ci et par le monde de l'informatique.
-    </h1>
-
-    <!--! main first -->
-    <main>
-        <section class="container">
-            <section class="followers">
-                <div class="case">
-                    <p>GitHub</p>
-                    <span>23</span>
-                </div>
-                <div class="case">
-                    <p>LinkedIn</p>
-
-                    <span>81</span>
-                </div>
-                <div class="case">
-                    <p>Twitter</p>
-                    <span>5</span>
-                </div>
-                <div class="case">
-                    <p>Instagram</p>
-                    <span>141</span>
-                </div>
-            </section>
-            <!-- *importation of a profile picture -->
-            <section class="img">
-                <img class="sizepic" src="./pictures/profile-pic.jpg" alt="profile-picture" />
-            </section>
-        </section>
-    </main>
-    <!-- *sentence below main -->
-    <section>
-        <h2 class="firstSentence" id="sentence">
-            Vous pouvez <span class="colorPink">me contacter</span> via mes réseaux
-            <span class="colorBlue">ci-dessous </span> <br> Sinon vous pouvez <span class="colorPink">cliquer</span> en
-            <span class="colorBlue">haut à droite</span> de la page pour plus d'infos !
+  <!-- !header production -->
+  <header>
+    <section class="section-flex">
+      <nav>
+        <p>
+          <a href="/index.html">
+            <span class="colorBlue">E</span><span class="colorPink">B</span>
+          </a>
+        </p>
+        <!--* create 3 buttons -->
+        <ul>
+          <li>
+            <a href="/pages/projects.html" class="colorBlue">Projets<i class="em em-dart"></i></a>
+          </li>
+          <li>
+            <a href="/pages/links.html" class="colorPink">Liens<i class="em em-zap"></i></a>
+          </li>
+        </ul>
+        <!-- *create button burger -->
+        <div class="btn-burger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+      </nav>
+      <div class="mobile-nav">
+        <ul class="mobile-ul">
+          <li>
+            <a href="/pages/projects.html">Projets</a>
+          </li>
+          <li>
+            <a href="/pages/links.html">Liens</a>
+          </li>
+          <li>
+            <a href="https://erwanbrevault.netlify.app/pages/en/index.html"><i class="em em-gb"></i> version of
+              this site</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </header>
+  <!--? def title -->
+  <h1>
+    <span class="colorBlue">Erwan Brévault</span> est un étudiant en développement
+    <span class="colorPink">Front-End</span>passionné par celui-ci et par le monde de l'informatique.
+  </h1>
+  <hr class="hr">
+  <!-- !create container -->
+  <main>
+    <section class="gridMain">
+      <section class="gridFirst">
+        <h2>
+          <i class="em em-dart"></i> Le métier de développeur vient de mon désir de créer des sites web pour les PME.
+          <br><br>
+          <i class="em em-art"></i> Je suis actuellement en train d'améliorer mes compétences en : <br><span
+            class="colorOrange">HTML5</span>,
+          <span class="colorBlueB">CSS3</span> et <span class="colorYell">Javascript</span>.
+          <br><br><i class="em em-chart_with_upwards_trend"></i> Pendant mon temps libre, je continue à apprendre et à
+          me
+          tenir au courant des dernières actualités du monde de l'informatique.
+          <br><br><i class="em em-male-student"></i> Je suis diplômé de deux formations françaises, le BAC professionnel
+          Systèmes Électroniques et Numériques option Électronique Industrielle Embarquée et le BTS Systèmes Numériques
+          option Informatique et Réseaux. <br><br> J'ai eu l'occasion d'effectuer différents stages dans le domaine de
+          l'électronique et de l'informatique.
         </h2>
-        <h2 id="sentence" class="secondSentence">
-            Vous pouvez <span class="colorPink">me contacter</span>via mes réseaux
-            <span class="colorBlue">ci-dessous </span> <br> Sinon vous pouvez <span class="colorPink">cliquer</span> sur
-            le bouton burger en<span class="colorBlue"> haut à droite</span> de la page pour plus d'infos !
-        </h2>
+      </section>
+      <section class="gridSecond">
+        <div class="img">
+          <img class="sizepic" src="/pictures/profile-pic.jpg" alt="profile-picture" />
+        </div>
+        <a href="/ErwanBrevCV.pdf" download class="dwnld-btn">Téléchargement du CV</a>
+      </section>
     </section>
     <!-- !formulaire de contact formspree -->
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <script>
-        window.formbutton = window.formbutton || function () {
-            (formbutton.q = formbutton.q || []).push(arguments)
-        };
-        /* customize formbutton below*/
-        formbutton("create", {
-            action: "https://formspree.io/f/xgedewzz",
-            title: "Comment puis-je vous aider?",
-            fields: [{
-                type: "email",
-                label: "Email:",
-                name: "email",
-                required: true,
-                placeholder: "votre@email.com"
-            }, {
-                type: "textarea",
-                label: "Message:",
-                name: "message",
-                placeholder: "Qu'est-ce qui vous préoccupe?",
-            }, {
-                type: "submit"
-            }],
-            styles: {
-                title: {
-                    backgroundColor: "violet"
-                },
-                button: {
-                    backgroundColor: "violet"
-                }
-            }
-        });
+      window.formbutton = window.formbutton || function () {
+        (formbutton.q = formbutton.q || []).push(arguments)
+      };
+      /* customize formbutton below*/
+      formbutton("create", {
+        action: "https://formspree.io/f/xgedewzz",
+        title: "Comment puis-je vous aider?",
+        fields: [{
+          type: "email",
+          label: "Email:",
+          name: "email",
+          required: true,
+          placeholder: "votre@email.com"
+        }, {
+          type: "textarea",
+          label: "Message:",
+          name: "message",
+          placeholder: "Qu'est-ce qui vous préoccupe?",
+        }, {
+          type: "submit"
+        }],
+        styles: {
+          title: {
+            backgroundColor: "violet"
+          },
+          button: {
+            backgroundColor: "violet"
+          }
+        }
+      });
     </script>
-    <!-- !pied de page du site -->
-    <footer>
-        <section class="section-flex2">
-            <nav class="wrapperFooter">
-                <!-- *import reseau sociaux logos -->
-                <div class="wrapTop">
-                    <div id="pics">
-                        <a href="https://github.com/erwanbrev" target="_blank">
-                            <img src="/pictures/svg/icons8-github-4!.png" alt="github-logo" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/erwanbrev/" target="_blank">
-                            <img src="/pictures/svg/icons8-linkedin.svg" alt="linkedin-logo" />
-                        </a>
-                        <a href="https://twitter.com/dev_bzh" target="_blank">
-                            <img src="/pictures/svg/icons8-twitter.svg" alt="twitter-logo" />
-                        </a>
-                        <a href="https://www.instagram.com/erwanbvt/" target="_blank"><img
-                                src="/pictures/svg/icons8-instagram.svg" alt="instagram-logo" />
-                        </a>
-                    </div>
-                </div>
-                <!-- *import logos reseaux sociaux mobile   -->
-                <div id="picsMobile" class="wrapTop">
-                    <a href="https://github.com/erwanbrev">
-                        <img src="/pictures/svg/mobile/icons8-github-24-modified.png" alt="github-logo" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/erwanbrev">
-                        <img src="/pictures/svg/mobile/icons8-linkedin.svg" alt="linkedin-logo" />
-                    </a>
-                    <a href="https://twitter.com/dev_bzh">
-                        <img src="/pictures/svg/mobile/icons8-twitter.svg" alt="twitter-logo" />
-                    </a>
-                    <a href="https://www.instagram.com/erwanbvt">
-                        <img src="/pictures/svg/mobile/icons8-instagram.svg" alt="instagram-logo" />
-                    </a>
-                </div>
-                <!-- !option pour envoyer un mail suite à un click -->
-                <div id="mail" class="wrapBot">
-                    <a href="mailto:devbzh35@gmail.com">devbzh35@gmail.com</a>
-                </div>
-                <!-- *link to french version -->
-                <div class="wrapSiteFR">
-                    <a href="https://erwanbrevault.netlify.app/">Version Anglaise du site</a>
-                </div>
-                <div class="wrapSign">
-                    <p>©ErwanBrévault</p>
-                </div>
-            </nav>
-        </section>
-    </footer>
-    <script src="./index.js"></script>
+  </main>
+  <!-- !website's footer -->
+  <footer>
+    <section class="section-flex2">
+      <nav class="wrapperFooter">
+        <!-- *import social-logos -->
+        <div class="wrapTop">
+          <div id="pics">
+            <a href="https://github.com/erwanbrev" target="_blank">
+              <img src="/pictures/svg/icons8-github-4!.png" alt="github-logo" />
+            </a>
+            <a href="https://www.linkedin.com/in/erwanbrev/" target="_blank">
+              <img src="/pictures/svg/icons8-linkedin.svg" alt="linkedin-logo" />
+            </a>
+            <a href="https://twitter.com/dev_bzh" target="_blank">
+              <img src="/pictures/svg/icons8-twitter.svg" alt="twitter-logo" />
+            </a>
+            <a href="https://www.instagram.com/erwanbvt/" target="_blank"><img src="/pictures/svg/icons8-instagram.svg"
+                alt="instagram-logo" />
+            </a>
+          </div>
+        </div>
+        <!-- *import mobile social-logos  -->
+        <div id="picsMobile" class="wrapTop">
+          <a href="https://github.com/erwanbrev">
+            <img src="/pictures/svg/mobile/icons8-github-24-modified.png" alt="github-logo" />
+          </a>
+          <a href="https://www.linkedin.com/in/erwanbrev">
+            <img src="/pictures/svg/mobile/icons8-linkedin.svg" alt="linkedin-logo" />
+          </a>
+          <a href="https://twitter.com/dev_bzh">
+            <img src="/pictures/svg/mobile/icons8-twitter.svg" alt="twitter-logo" />
+          </a>
+          <a href="https://www.instagram.com/erwanbvt">
+            <img src="/pictures/svg/mobile/icons8-instagram.svg" alt="instagram-logo" />
+          </a>
+        </div>
+        <!-- !option to send mail after clicked -->
+        <div id="mail" class="wrapBot">
+          <a href="mailto:devbzh35@gmail.com">devbzh35@gmail.com</a>
+        </div>
+        <!-- *link to french version -->
+        <div class="wrapSiteEN">
+          <a href="https://erwanbrevault.netlify.app/pages/en/pages/bio.html"><i class="em em-gb"></i> version of this
+            site</a>
+        </div>
+        <div class="wrapSign">
+          <p>©ErwanBrévault</p>
+        </div>
+      </nav>
+    </section>
+  </footer>
+  <script src="/index.js"></script>
 </body>
 
 </html>
