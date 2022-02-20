@@ -308,13 +308,14 @@ footer {
   a.dwnld-btn {
     margin: 4% 9%;
   }
-
   h1 {
     width: 80%;
     font-size: 180%;
     justify-content: flex-start;
   }
-
+  h1 span {
+    margin: 0 0.8%;
+  }
   .hr {
     height: 3px;
     margin: 2% auto;
