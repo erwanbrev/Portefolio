@@ -306,7 +306,7 @@ footer {
 
   /* ! container */
   a.dwnld-btn {
-    margin: 4% 14%;
+    margin: 4% 8%;
   }
 
   h1 {
@@ -515,6 +515,10 @@ footer {
     margin-left: 12%;
     justify-content: flex-start;
     padding: 10px;
+  }
+
+  a.dwnld-btn {
+    margin: 4% 0%;
   }
 
   .hr {
