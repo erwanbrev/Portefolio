@@ -180,7 +180,7 @@ a.dwnld-btn {
   background: linear-gradient(var(--pinkmo), var(--bluemo));
   color: white;
   border-radius: 25px;
-  margin: 2% 6%;
+  margin: 1.5% 6%;
   position: absolute;
   z-index: 3;
 }
@@ -306,16 +306,19 @@ footer {
 
   /* ! container */
   a.dwnld-btn {
-    margin: 4% 9%;
+    margin: 4% 14%;
   }
+
   h1 {
     width: 80%;
     font-size: 180%;
     justify-content: flex-start;
   }
+
   h1 span {
     margin: 0 0.8%;
   }
+
   .hr {
     height: 3px;
     margin: 2% auto;
@@ -500,10 +503,6 @@ footer {
 
   .mobile-nav-active {
     transform: translateX(-5%);
-  }
-
-  a.dwnld-btn {
-    margin-left: -5px;
   }
 
   h1 {
@@ -715,7 +714,7 @@ footer {
 
   a.dwnld-btn {
     padding: 15px;
-    margin: 3% 6.5%;
+    margin: 1.2% 6.8%;
   }
 
   .img {
