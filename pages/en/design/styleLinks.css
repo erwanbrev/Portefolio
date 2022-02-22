@@ -116,7 +116,6 @@ body {
   text-align: center;
   font-family: "Fredoka One", "Arial";
   font-size: 1.2rem;
-  margin-top: 2%;
 }
 
 .sentence a {
@@ -127,6 +126,7 @@ body {
 .containerV2 {
   display: grid;
   width: 920px;
+  height: 100px;
   margin: 2% auto;
   background: #171717;
   border-radius: 5px;
@@ -136,7 +136,7 @@ body {
   display: grid;
   grid-template-columns: minmax(100px, 1fr);
   align-items: center;
-  margin: 5% 5%;
+  margin: auto 5%;
 }
 
 .gridMain a {
@@ -208,22 +208,9 @@ footer {
   grid-row: 1 / 3;
 }
 
-.wrapSiteEN {
-  grid-column: 3;
-  grid-row: 1;
-  margin-bottom: 2%;
-}
-
-.wrapSiteEN a {
-  list-style: none;
-  text-decoration: none;
-  color: var(--white);
-  font-size: 1.2rem;
-}
-
 .wrapSign {
   grid-column: 3;
-  grid-row: 2;
+  grid-row: 1 / 3;
   color: var(--grey);
   font-size: 1.5rem;
 }
@@ -266,7 +253,7 @@ footer {
     display: none;
   }
 
-  .nav-1 p {
+  nav p {
     margin-left: 10px;
   }
 
@@ -439,7 +426,7 @@ footer {
 
   /* ?look of three options */
 
-  .nav-1 ul li {
+  nav ul li {
     font-size: 2.3rem;
     margin: 0 10px;
   }
@@ -456,12 +443,11 @@ footer {
   /* DISPLAY ARRAY CENTER  */
   .containerV2 {
     width: 1200px;
-    margin: 4% auto;
   }
 
   .gridMain {
     font-size: 200%;
-    margin: 4% 4%;
+    margin: auto 4%;
     text-align: center;
     row-gap: 20px;
   }
