@@ -249,7 +249,7 @@ footer {
     display: none;
   }
 
-  .nav-1 p {
+ nav p {
     margin-left: 10px;
   }
 
@@ -272,7 +272,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 70vh;
+    height: 46vh;
   }
 
   .mobile-ul a {
@@ -414,11 +414,11 @@ footer {
 @media screen and (max-width: 820px) {
 
   /* DISPLAY ARRAY CENTER  */
-  .nav-1 ul li {
+ navul li {
     font-size: 1.5rem;
   }
 
-  .nav-1 i {
+ navi {
     display: none;
   }
 
