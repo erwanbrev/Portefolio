@@ -6,6 +6,7 @@
   --pinkmo: #f5578e;
   --bluemo: #56ddd9;
   --grey: #bac0c0;
+  --bgtwo: #171717;
 }
 
 *,
@@ -111,12 +112,15 @@ nav i {
   color: var(--grey);
 }
 
+.bgtwo {
+  color: var(--bgtwo);
+}
+
 /* apparence des options */
 ul a {
   text-decoration: none;
   color: var(--white);
 }
-
 
 body {
   font-family: "Rubik", "Arial";
@@ -142,7 +146,8 @@ h1 span {
 }
 
 .hr {
-  margin: 1% auto;
+  margin: 2% auto;
+  margin-top: 1%;
   background-color: var(--pinkmo);
   height: 1px;
   width: 80%;
@@ -155,6 +160,10 @@ h1 span {
   grid-template-rows: repeat(1, 1fr);
   justify-items: center;
   margin: 1% 5%;
+  height: 460px;
+  padding: 10px;
+  background-color: var(--bgtwo);
+  border-radius: 10px;
 }
 
 .gridFirst {
@@ -200,6 +209,10 @@ a.dwnld-btn:hover {
 .sizepic {
   width: 350px;
   border-radius: 5px;
+}
+
+.sizepic:hover {
+  width: 380px;
 }
 
 /* !website's footer */
@@ -250,6 +263,10 @@ footer {
   display: flex;
   width: 400px;
   justify-content: space-around;
+}
+
+#pics img:hover {
+  width: 60px;
 }
 
 #picsMobile {
@@ -316,30 +333,34 @@ footer {
   .gridMain {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     margin: 5% 5%;
+    height: 1040px;
   }
 
   .gridFirst {
     grid-column: 1;
     grid-row: 1;
     width: 90%;
+    height: 85%;
+    padding: 2%;
   }
 
   .gridSecond {
-    margin-top: 10%;
     grid-column: 1;
     grid-row: 2;
     margin-left: 0;
+    margin-top: 4%;
+    margin-bottom: 4%;
   }
 
   /* MAIN */
   h2 {
-    padding: 2%;
     font-size: 120%;
     width: 100%;
     line-height: 140%;
+    margin-bottom: 0;
   }
 
   .img {
@@ -360,7 +381,7 @@ footer {
   footer {
     margin-top: 15%;
     width: 100%;
-    height: 23vh;
+    height: 27vh;
   }
 
   .wrapperFooter {
@@ -381,10 +402,6 @@ footer {
   .wrapBot {
     grid-column: 1;
     grid-row: 2;
-  }
-
-  .wrapSiteFR {
-    display: none;
   }
 
   .wrapSign {
@@ -494,16 +511,17 @@ footer {
     transform: translateX(-5%);
   }
 
-  a.dwnld-btn {
-    margin: 6% 6.5%;
+  h1 {
+    width: 85%;
+    margin: auto;
+    font-size: 160%;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
   }
 
-  h1 {
-    flex-wrap: wrap;
-    font-size: 140%;
-    justify-content: center;
-    margin-left: 12%;
-    padding: 10px;
+  a.dwnld-btn {
+    margin: 4% 7.5%;
   }
 
   h1 span {
@@ -518,15 +536,17 @@ footer {
   .gridMain {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     margin: 5% 5%;
+    height: 790px;
   }
 
   .gridFirst {
     grid-column: 1;
     grid-row: 1;
     width: 300px;
+    text-align: center;
   }
 
   .gridSecond {
@@ -558,7 +578,7 @@ footer {
   }
 
   footer {
-    margin-top: 24%;
+    margin-top: 12%;
     display: grid;
     background-color: #171717;
     height: 18vh;
@@ -582,10 +602,6 @@ footer {
     grid-column: 1;
     grid-row: 2;
     margin-left: 8%;
-  }
-
-  .wrapSiteFR {
-    display: none;
   }
 
   .wrapSign {

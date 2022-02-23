@@ -518,7 +518,7 @@ footer {
   }
 
   footer {
-    margin-top: 24%;
+    margin-top: 12%;
     display: grid;
     background-color: #171717;
     height: 18vh;
@@ -542,10 +542,6 @@ footer {
     grid-column: 1;
     grid-row: 2;
     margin-left: 8%;
-  }
-
-  .wrapSiteEN {
-    display: none;
   }
 
   .wrapSign {
@@ -580,6 +576,7 @@ footer {
     color: var(--grey);
     font-size: 100%;
   }
+
 
   /* La classe toggle est créée directement en JS */
   .toggle .line-1 {
