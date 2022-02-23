@@ -539,7 +539,7 @@ footer {
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     margin: 5% 5%;
-    height: 790px;
+    height: 860px;
   }
 
   .gridFirst {
