@@ -318,7 +318,8 @@ footer {
   h1 {
     width: 80%;
     font-size: 180%;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
   }
 
   h1 span {
@@ -535,7 +536,7 @@ footer {
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     margin: 5% 5%;
-    height: 860px;
+    height: 890px;
   }
 
   .gridFirst {

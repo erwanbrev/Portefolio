@@ -225,6 +225,9 @@ footer {
   width: 400px;
   justify-content: space-around;
 }
+#pics img:hover {
+  width: 60px;
+}
 
 #picsMobile {
   display: none;
@@ -240,6 +243,109 @@ footer {
   color: var(--grey);
 }
 
+/*  */
+/*  */
+/*  */
+@media screen and (max-width: 730px) {
+
+  /* ! header */
+  header {
+    margin-top: 2%;
+  }
+
+  nav ul {
+    margin-right: 1%;
+  }
+
+  .section-flex {
+    width: 100%;
+  }
+
+  nav p {
+    margin-left: 2%;
+  }
+
+  /* !container */
+  .sentence {
+    margin-bottom: 6%;
+  }
+
+  .containerV2 {
+    display: grid;
+    width: 80%;
+    margin: 2% auto;
+    background: #171717;
+    border-radius: 10px;
+  }
+
+  /* !footer */
+
+  #picsMobile {
+    display: none;
+  }
+
+  footer {
+    margin-top: 8%;
+    width: 100%;
+    height: 28vh;
+  }
+
+  .wrapperFooter {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .wrapTop {
+    margin-top: 2%;
+    width: 80%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .wrapBot {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .wrapSiteEN {
+    display: none;
+  }
+
+  .wrapSign {
+    grid-column: 1;
+    grid-row: 3;
+    color: var(--bluemo);
+    margin-bottom: 2%;
+    font-size: 100%;
+  }
+
+  nav #pics {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 16%;
+  }
+
+  nav #picsMobile {
+    display: none;
+  }
+
+  nav #mail {
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    width: 150px;
+  }
+
+  #mail a {
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 140%;
+  }
+
+}
 
 /*  */
 /*  */
