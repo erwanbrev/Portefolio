@@ -664,14 +664,13 @@ footer {
 /*  */
 /* ?1920 x 1080 PC  */
 @media screen and (min-width: 1920px) {
-  /* ?navbar */
 
+  /* !header */
   .flex-nav {
     height: 100px;
     margin-top: 1%;
   }
 
-  /* ?definition du header */
 
   header {
     height: 80px;
@@ -682,32 +681,33 @@ footer {
     margin: 0 10px;
   }
 
-  /* ?look of three options */
-
   nav ul li {
     font-size: 2.3rem;
     margin: 0 10px;
   }
 
+  /* !container */
   .gridMain {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     justify-items: center;
-    margin: 2% 5%;
+    margin: 2% auto;
+    width: 1250px;
+    height: 620px;
   }
 
   .gridFirst {
     grid-column: 1;
     grid-row: 1;
-    width: 1000px;
+    width: 721px;
   }
 
   .gridSecond {
     grid-column: 2;
     grid-row: 1;
     margin-top: 2%;
-    margin-left: 20%;
+    margin-left: 1%;
   }
 
   h2 {
@@ -731,8 +731,9 @@ footer {
     width: 450px;
   }
 
+  /* !footer */
   footer {
-    margin-top: 5%;
+    margin-top: 2%;
     display: grid;
     background-color: #171717;
     height: 14vh;
