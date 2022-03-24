@@ -183,6 +183,13 @@ ul a {
     text-decoration: none;
 }
 
+/* !main */
+#mainGrid,
+.containerV2,
+#proj {
+    box-shadow: 8px 8px 5px rgb(0 0 0 / 20%);
+}
+
 /* !footer*/
 footer {
     display: grid;
