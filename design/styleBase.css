@@ -264,6 +264,86 @@ footer {
     text-decoration: none;
 }
 
+@media screen and (max-width: 730px) {
+
+    /* ! header */
+    header {
+        margin-top: 0%;
+    }
+
+    nav ul {
+        margin-right: 1%;
+    }
+
+    nav p {
+        margin-left: 2%;
+    }
+
+    /* !footer */
+    #pics {
+        display: none;
+    }
+
+    footer {
+        margin-top: 12.5%;
+        display: grid;
+        height: 15vh;
+    }
+
+    .wrapperFooter {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .wrapTop {
+        margin-top: 2%;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .wrapBot {
+        grid-column: 1;
+        grid-row: 2;
+        margin-left: 8%;
+    }
+
+    .wrapSign {
+        grid-column: 1;
+        grid-row: 3;
+        color: var(--bluemo);
+        margin-bottom: 2%;
+        font-size: .8rem;
+    }
+
+    nav #pics {
+        display: none;
+    }
+
+    nav #picsMobile {
+        display: flex;
+        width: 60%;
+        justify-content: space-around;
+    }
+
+    nav #mail {
+        display: flex;
+        margin-top: 5px;
+        font-size: 1rem;
+        justify-content: center;
+        width: 150px;
+        margin-right: 30px;
+    }
+
+    #mail a {
+        text-decoration: none;
+        color: var(--grey);
+        font-size: 100%;
+    }
+}
+
 /* !responsive mobile */
 @media screen and (max-width: 600px) {
 

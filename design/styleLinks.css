@@ -89,20 +89,9 @@ footer {
 @media screen and (max-width: 730px) {
 
   /* ! header */
-  header {
-    margin-top: 2%;
-  }
-
-  nav ul {
-    margin-right: 1%;
-  }
 
   .section-flex {
     width: 100%;
-  }
-
-  nav p {
-    margin-left: 2%;
   }
 
   /* !container */
