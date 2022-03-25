@@ -39,6 +39,7 @@ body {
         color: var(--bgWhite);
     }
 
+    header,
     .gridMain,
     .containerV2,
     #proj,
@@ -56,8 +57,14 @@ body {
     }
 
     #proj img {
-        border: var(--bgWhite) 1px solid;
-        box-shadow: 7px 7px 8px var(--bgWhite);
+        box-shadow: 8px 8px 5px var(--bgWhite);
+    }
+
+    #mainGrid,
+    .containerV2,
+    #proj,
+    #proj img {
+        border: var(--bgWhite) .5px solid;
     }
 }
 
@@ -69,6 +76,7 @@ body {
         color: var(--bgBlack);
     }
 
+    header,
     .gridMain,
     .containerV2,
     #proj,
@@ -88,6 +96,17 @@ body {
     #proj img {
         border: var(--greyBis) 1px solid;
         box-shadow: 7px 7px 8px var(--greyBis);
+    }
+
+    #proj img {
+        box-shadow: 8px 8px 5px rgb(0 0 0 / 20%);
+    }
+
+    #mainGrid,
+    .containerV2,
+    #proj,
+    #proj img {
+        border: var(--bgWhite) .5px solid;
     }
 }
 
@@ -136,7 +155,6 @@ header {
 
 .section-flex {
     height: 100%;
-    margin-top: 1%;
 }
 
 nav {
@@ -148,6 +166,11 @@ nav {
 /**sizing of logo */
 nav p {
     margin-left: 50px;
+}
+
+nav ul,
+nav p {
+    margin-top: 1.5%;
 }
 
 nav span {
@@ -181,13 +204,6 @@ nav i {
 /* apparence des options */
 ul a {
     text-decoration: none;
-}
-
-/* !main */
-#mainGrid,
-.containerV2,
-#proj {
-    box-shadow: 8px 8px 5px rgb(0 0 0 / 20%);
 }
 
 /* !footer*/
@@ -253,7 +269,8 @@ footer {
 
     /* !header */
     header {
-        height: 14vh;
+        margin: 0;
+        height: 8vh;
     }
 
     .section-flex {
@@ -311,6 +328,11 @@ footer {
         margin-right: 10px;
     }
 
+    .btn-burger,
+    nav p {
+        margin-top: 3%;
+    }
+
     .mobile-nav-active {
         transform: translateX(-5%);
     }
@@ -323,7 +345,7 @@ footer {
     footer {
         margin-top: 12.5%;
         display: grid;
-        height: 18vh;
+        height: 15vh;
     }
 
     .wrapperFooter {
