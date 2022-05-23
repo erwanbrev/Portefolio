@@ -283,9 +283,8 @@ h1 span {
     margin: 2% auto;
   }
 
-  .hr:nth-child(2),
   .hr:nth-child(4) {
-    margin-top: 12%;
+    margin-top: 20%;
   }
 
   .hr:nth-child(3) {
